@@ -5,7 +5,7 @@ function celciousToFahrenheit(celcious){
 }
 const celcious = 20;
 const getFahrenheit = celciousToFahrenheit(celcious);
-console.log(getFahrenheit) 
+console.log("Your converted fharenhiet:", getFahrenheit) 
 
 
 
@@ -20,10 +20,10 @@ function findDuplicate(numbers, find){
     return count;
 }
 
-const numbers = [5,6,11,12,98, 5]
+const numbers = [5, 6, 11, 12, 98, 5]
 const find = 5;
 const result2 = findDuplicate(numbers, find);
-console.log(result2)
+console.log( "Total Similar Eliment:", result2)
 
 
 
@@ -41,7 +41,7 @@ function countVowel(str){
 }
 const str = " i love you";
 const getVowel = countVowel(str);
-console.log(getVowel);
+console.log('Total vowel is:', getVowel);
 
 
 
@@ -59,9 +59,9 @@ function findLongestWord(str2){
 }
 const str2 = 'JavaScript makes programming fun and challenging at the same time';
 const getLongestWord = findLongestWord(str2);
-console.log(getLongestWord)
+console.log("Your Desire Word:", getLongestWord)
 
 // task 5
 // Generate a random number between 10 to 20.
 const genNumber = Math.floor(10 + Math.random() * 11);
-console.log(genNumber)
+console.log("Your Generated Number:", genNumber)
