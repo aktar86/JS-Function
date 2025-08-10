@@ -51,3 +51,23 @@ function findAddress(obj) {
 const object = {street: 10, house: '15A', society: 'Earth Perfect'};
 const result4 = findAddress(object);
 console.log(result4)
+
+// problem 5
+function canPay(changeArray, totalDue) {
+    let sumPrice = 0;
+    for(const price of changeArray){
+        sumPrice += price;
+    }
+    if(sumPrice >= totalDue){
+        return true;
+    }
+    else{
+        return false
+    }
+}
+const changeArray = [1,5,5];
+const totalDue = 10;
+const result5 = canPay(changeArray, totalDue);
+console.log(result5);
+
+
