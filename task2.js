@@ -1,6 +1,5 @@
 // Task-1:
 // Write a function to convert temperature from Celsius to Fahrenheit.
-
 function celciousToFahrenheit(celcious){
      return (celcious * 9/5) + 32;
 }
@@ -8,7 +7,8 @@ const celcious = 20;
 const getFahrenheit = celciousToFahrenheit(celcious);
 console.log(getFahrenheit) 
 
-// ------------------------------------------------------------
+
+
 // task 2
 function findDuplicate(numbers, find){
     let count = 0;
@@ -24,7 +24,9 @@ const numbers = [5,6,11,12,98, 5]
 const find = 5;
 const result2 = findDuplicate(numbers, find);
 console.log(result2)
-// -----------------------------------------------------------
+
+
+
 // Task-3:
 // Write a function to count the number of vowels in a string.
 function countVowel(str){
@@ -40,7 +42,9 @@ function countVowel(str){
 const str = " i love you";
 const getVowel = countVowel(str);
 console.log(getVowel);
-// ---------------------------------------------------
+
+
+
 // task 4
 function findLongestWord(str2){
     let strToArray = str2.split(' ')
