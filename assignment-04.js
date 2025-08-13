@@ -71,3 +71,34 @@ function  isSame(arr1 , arr2 ) {
 // console.log(arr)
 
 
+// Problem 5
+function  resultReport( marks ) {
+    if(Array.isArray(marks) === false){
+        return "Invalid";
+    }
+
+    let totalMarks = 0;
+    let pass = 0;
+    let fail = 0;
+
+    for(const mark of marks){
+        if(mark >= 40){
+            totalMarks+= mark;
+            pass++;
+        }
+        else{
+            totalMarks+= mark;
+            fail++;
+        }
+    }
+    let avg = Math.round(totalMarks / marks.length);
+    const result = {};
+    result.finalScore = avg;
+    result.pass = pass;
+    result.fail = fail;
+
+    return result; 
+}
+
+const arr = resultReport(100)
+console.log(arr)
