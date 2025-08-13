@@ -7,8 +7,6 @@ const celcious = 20;
 const getFahrenheit = celciousToFahrenheit(celcious);
 console.log("Your converted fharenhiet:", getFahrenheit) 
 
-
-
 // task 2
 function findDuplicate(numbers, find){
     let count = 0;
@@ -25,8 +23,6 @@ const find = 5;
 const result2 = findDuplicate(numbers, find);
 console.log( "Total Similar Eliment:", result2)
 
-
-
 // Task-3:
 // Write a function to count the number of vowels in a string.
 function countVowel(str){
@@ -42,8 +38,6 @@ function countVowel(str){
 const str = " i love you";
 const getVowel = countVowel(str);
 console.log('Total vowel is:', getVowel);
-
-
 
 // task 4
 function findLongestWord(str2){
