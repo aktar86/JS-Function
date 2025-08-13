@@ -15,4 +15,14 @@ function totalFine( fare ) {
 // const getFineWithRent = totalFine(200)
 // console.log(getFineWithRent)
 
+// problem 2
+function  onlyCharacter( str ) {
+    if(typeof str !== "string") {
+        return "Invalid";
+    }
+    let character = str.trim().split(" ").join("");
+    return character.toUpperCase();
 
+}
+const getCleanStr = onlyCharacter("  h e llo wor   ld")
+console.log(getCleanStr)
