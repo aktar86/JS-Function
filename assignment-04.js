@@ -27,6 +27,7 @@ function  onlyCharacter( str ) {
 // const getCleanStr = onlyCharacter("  h e llo wor   ld")
 // console.log(getCleanStr)
 
+// problem 3
 function  bestTeam( player1, player2 ) {
     let score1 = player1.foul + player1.cardY + player1.cardR;
     let score2 = player2.foul + player2.cardY + player2.cardR;
@@ -49,4 +50,24 @@ function  bestTeam( player1, player2 ) {
 // const getBestTeam = bestTeam({ name: "Brazil", foul: 5, cardY: 1, cardR: 0 },
 // { name: "Argentina", foul: 7, cardY: 0, cardR: 0 })
 // console.log(getBestTeam)
+
+
+// problem 4
+function  isSame(arr1 , arr2 ) {
+    if(Array.isArray(arr1) === false || Array.isArray(arr2) === false){
+        return "Invalid";
+    }
+    if(arr1.length !== arr2.length){
+        return false;
+    }
+    for(let i = 0; i < arr1.length; i++){
+        if(arr1[i] !== arr2[i]){
+            return false;
+        }
+    }
+    return true;
+}
+// const arr = isSame([1, 2, 3] , [1 , 2 , 3]);
+// console.log(arr)
+
 
