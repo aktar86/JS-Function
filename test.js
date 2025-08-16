@@ -47,6 +47,8 @@ function arrayDiff(a, b) {
 
 console.log(arrayDiff([1, 2], [1]));       
 console.log(arrayDiff([1, 2, 2, 3], [2])); 
+
+
 // walkApp
 function dailyWalk(walk){
     if(walk.length > 10){
@@ -79,35 +81,28 @@ function dailyWalk(walk){
 const walkArr = ['n', 's', 'w', 'e', 'n', 's', 'w', 'e', 'n', 's']
 const getWalk = dailyWalk(walkArr);
 console.log(getWalk)
+// problem
 
-// two
-function isValidWalk(walk){
-    if(walk.length > 10){
-        console.log(false)
-    }
-    else{
-        let northSouth = 0;
-        let eastWest = 0;
 
-    for(const dir of walk){
-        switch(dir){
-            case 'n':
-                northSouth ++;
-                break;
-            case 's':
-                northSouth--;
-                break;
-            case 'e':
-                eastWest++;
-                break;
-            case 'w':
-                eastWest--;
-                break;     
-        }
-    }
-    let result = northSouth === 0 && eastWest === 0;
-    console.log(true)
-    }
+// function openOrSenior(data){
     
-}
-isValidWalk(['n', 's', 'w', 'e', 'n', 's', 'w', 'e', 'n', 's'])
+//     let sum = 0;
+//     for(const age of data ){
+//         for(const a of age){
+//             sum += a;
+//         }
+//     }
+    
+//     let storePerson =[];
+//     if(sum < 50){
+//         storePerson.push("Open");
+//     }
+//     if(sum > 50){
+//         storePerson.push("Senior")
+//     }
+    
+//     return storePerson;
+// }
+// const age =  [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]];
+// const getarr = openOrSenior(age);
+// console.log(getarr)
