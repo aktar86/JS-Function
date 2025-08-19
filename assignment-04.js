@@ -91,6 +91,12 @@ function  resultReport( marks ) {
             fail++;
         }
     }
+    
+    if(marks.length === 0){
+        let obj = { finalScore: 0, pass: 0, fail: 0 }
+        return obj;
+    }
+    
     let avg = Math.round(totalMarks / marks.length);
     const result = {};
     result.finalScore = avg;
